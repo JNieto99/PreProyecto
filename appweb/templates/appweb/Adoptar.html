@@ -1,0 +1,24 @@
+{% extends 'appweb/nodriza.html' %}
+
+{% block contenido %}
+
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">ADOPTA</h1>
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mb-0">Encuentra tu mascota o ayudanos a buscarle un hogar </p>
+    </div>
+
+
+
+</header>
+    </body>
+</html>
+<ul>
+    {% for animal in listado_animales %}
+        <li>{{animal.tipo}} - {{animal.nombre}}</li>
+    {% endfor%}
+</ul>
+{% endblock %}
