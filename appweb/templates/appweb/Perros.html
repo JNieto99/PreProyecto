@@ -17,8 +17,9 @@
     </body>
 </html>
 <ul>
-    {% for animal in listado_animales %}
-        <li>{{animal.tipo}} - {{animal.nombre}}</li>
+    <h6>Lista de perritos:</h6>
+    {% for perros in listado_perritos %}
+        <li>{{perros.nombre}}</li>
     {% endfor%}
 </ul>
 {% endblock %}

@@ -10,10 +10,22 @@
         <!-- Masthead Subheading-->
         <p class="masthead-subheading font-weight-light mb-0">Ayudanos a buscarle un hogar </p>
     </div>
+
+
+
 </header>
-</body>
+    </body>
 </html>
-<h2>Registrar:</h2>
-<h4 class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="http://127.0.0.1:8000/inicio/reg_perros">Perros</a></h4>
-<h4 class="nav-item mx-0 mx-lg-1"><a class="nav-link py-3 px-0 px-lg-3 rounded" href="http://127.0.0.1:8000/inicio/reg_gatos/">Gatos</a></h4>
+<ul>
+<form action="/inicio/reg_gatos/" method="post">
+    {% csrf_token %}
+    
+    <p>Nombre:                      <input type="text" name="nombre"></p>
+    <p>Etapa(gatito, joven, adulto, maduro):<input type="text" name="etapa"></p>
+    <p>Raza:                        <input type="text" name="raza"></p>
+
+    <input type="submit" value="Cargar">
+  
+</form>
+</ul>
 {% endblock %}

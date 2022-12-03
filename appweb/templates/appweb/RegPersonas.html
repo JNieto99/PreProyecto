@@ -1,0 +1,31 @@
+{% extends 'appweb/nodriza.html' %}
+
+{% block contenido %}
+
+<header class="masthead bg-primary text-white text-center">
+    <div class="container d-flex align-items-center flex-column">
+
+        <!-- Masthead Heading-->
+        <h1 class="masthead-heading text-uppercase mb-0">Anotate</h1>
+        <!-- Masthead Subheading-->
+        <p class="masthead-subheading font-weight-light mb-0">Ayudanos con recursos </p>
+    </div>
+
+
+
+</header>
+    </body>
+</html>
+<ul>
+<form action="/inicio/unite/" method="post">
+    {% csrf_token %}
+    
+    <p>Nombre:<input type="text" name="nomb"></p>
+    <p>Apellido:<input type="text" name="apell"></p>
+    <p>Telefono:<input type="text" name="tel"></p>
+
+    <input type="submit" value="Cargar">
+
+</form>
+</ul>
+{% endblock %}
